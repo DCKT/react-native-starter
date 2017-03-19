@@ -1,8 +1,8 @@
 import React from 'react'
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View } from 'react-native'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { Container, Header, Title, Content, Button, Left, Right, Body, Icon } from 'native-base'
+import { Container, Header, Title, Content, Button, Left, Right, Body, Icon, Text } from 'native-base'
 import { getTimestamp } from '../actions/demo'
 
 type Props = {
@@ -32,9 +32,9 @@ class Home extends React.Component {
           <View>
             <Text>Home view</Text>
             <Text>Demo redux : {this.props.demoText}</Text>
-            <TouchableOpacity onPress={this._onPress}>
+            <Button primary onPress={this._onPress}>
               <Text>Change demo text !</Text>
-            </TouchableOpacity>
+            </Button>
           </View>
         </Content>
       </Container>
