@@ -8,6 +8,8 @@
 		"lint": "./node_modules/.bin/eslint ."
 	},
 	"dependencies": {
+		"@expo/ex-navigation": "^2.9.2",
+		"babel-preset-react-native-stage-0": "^1.0.1",
 		"react": "~15.4.1",
 		"react-native": "0.42.3"
 	},
