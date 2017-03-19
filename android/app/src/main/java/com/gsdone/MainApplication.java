@@ -1,4 +1,4 @@
-package com.gsdone;
+package com.projectname;
 
 import android.app.Application;
 
