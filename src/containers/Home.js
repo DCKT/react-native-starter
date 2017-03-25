@@ -1,8 +1,8 @@
 import React from 'react'
-import { View } from 'react-native'
+import { View, StatusBar } from 'react-native'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { Container, Header, Title, Content, Button, Left, Right, Body, Icon, Text } from 'native-base'
+import { Button, Text } from 'native-base'
 import { getTimestamp } from '../actions/demo'
 
 type Props = {
@@ -13,31 +13,28 @@ type Props = {
 class Home extends React.Component {
   props: Props
 
+  static navigationOptions = {
+    title: 'react-native-starter',
+    header: {
+      style: {
+        backgroundColor: '#26A69A'
+      },
+      titleStyle: {
+        color: '#fff'
+      }
+    }
+  }
+
   render () {
     return (
-      <Container>
-        <Header>
-          <Left>
-            <Button transparent>
-              <Icon name='menu' />
-            </Button>
-          </Left>
-          <Body>
-            <Title>Header</Title>
-          </Body>
-          <Right />
-        </Header>
-
-        <Content>
-          <View>
-            <Text>Home view</Text>
-            <Text>Demo redux : {this.props.demoText}</Text>
-            <Button primary onPress={this._onPress}>
-              <Text>Change demo text !</Text>
-            </Button>
-          </View>
-        </Content>
-      </Container>
+      <View>
+        <StatusBar backgroundColor='#009688' barStyle='light-content' />
+        <Text>Home view</Text>
+        <Text>Demo redux : {this.props.demoText}</Text>
+        <Button primary onPress={this._onPress}>
+          <Text>Change demo text !</Text>
+        </Button>
+      </View>
     )
   }
 

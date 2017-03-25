@@ -16,7 +16,7 @@ Current React Native version supported : **0.42.3**
 This starter uses :
 - `redux` as state manager
 - `native-base` for his UI components
-- `expo` for the SDK and Router
+- `react-navigation` for the Router
 
 ## Scripts commands
 
@@ -26,5 +26,5 @@ Here is the available scripts commands :
 - `android`: alias for "react-native run-android"
 - `ios`: alias for "react-native run-ios"
 - `lint`: run eslint
-- `build:android`: create Android APK
-- `build:ios`: create iOS jsbundle
+- `build:android`: create Android APK release
+- `build:ios`: create iOS jsbundle release
