@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { Button, Text } from 'native-base'
 import { getTimestamp } from '../actions/demo'
+import SplashScreen from 'react-native-splash-screen'
 
 type Props = {
   getTimestamp: Function,
@@ -12,6 +13,10 @@ type Props = {
 
 class Home extends React.Component {
   props: Props
+
+  componentDidMount () {
+    SplashScreen.hide()
+  }
 
   static navigationOptions = {
     title: 'react-native-starter',
