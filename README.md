@@ -14,6 +14,7 @@ Current React Native version supported : **0.42.3**
 ## Packages
 
 This starter uses :
+- `react-native-splash-screen` to manage splash screen
 - `redux` as state manager
 - `native-base` for his UI components
 - `react-navigation` for the Router
