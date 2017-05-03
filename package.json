@@ -12,7 +12,6 @@
 		"build:ios": "react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output ./ios/main.jsbundle --assets-dest ./ios"
 	},
 	"dependencies": {
-		"@expo/ex-navigation": "^2.9.2",
 		"babel-preset-react-native-stage-0": "^1.0.1",
 		"native-base": "^2.0.13",
 		"react": "~15.4.1",
